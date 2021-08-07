@@ -1,0 +1,10 @@
+.header {
+  max-width: 1000px;
+  max-height: 100px;
+  font-family: "Libre Franklin", Arial, sans-serif;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #194222;
+}
