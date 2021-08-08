@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;500;600&display=swap" rel="stylesheet"> <!-- подключила шрифт из гугл фонт -->
-<link rel="stylesheet" href="pages/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- подключила шрифт из гугл фонт -->
+    <link rel="stylesheet" href="pages/index.css" />
     <title>Domoluxx</title>
-</head>
+  </head>
 
-<body class="body">
+  <body class="body">
     <div class="page">
-        <div class="header">
-            <div class= "header__container">
-             <h2 class = "header__logo"> DOMO </h2>
-                <h2 class = "header__logo"> LUXX </h2>  <!-- здесь потом будет лого в виде картинки -->
-                </div>
-                <nav>
-                    <ul class="header__list">
-                        <li class="header__list_item">
-                            <a href="#" class="header__link">О проекте</a>
-                        </li>
-                        <li class="header__list_item">
-                            <a href="#" class="header__link">Дома</a>
-                        </li>
-                        <li class="header__list_item">
-                            <a href="#" class="header__link">Контакты</a>
-                        </li>
-                        <li class="header__list_item">
-                            <img class="header__location" src='./images/location.png'>
-                            <a href="#" class="header__link">Местоположение</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-<main class="content"> <!-- примерный план -->
-    <section class="project"></section>
-    <section class="infrastructure"></section>
-    <section class="house"></section>
-    <section class="contacts"></section>
-</main>
-<footer class="footer"></footer>
+      <div class="header">
+        <div class="header__container">
+          <h2 class="header__logo">DOMO</h2>
+          <h2 class="header__logo">LUXX</h2>
+          <!-- здесь потом будет лого в виде картинки -->
+        </div>
+        <nav>
+          <ul class="header__list">
+            <li class="header__list_item">
+              <a href="#" class="header__link">О проекте</a>
+            </li>
+            <li class="header__list_item">
+              <a href="#" class="header__link">Дома</a>
+            </li>
+            <li class="header__list_item">
+              <a href="#" class="header__link">Контакты</a>
+            </li>
+            <li class="header__list_item">
+              <img class="header__location" src="./images/location.png" />
+              <a href="#" class="header__link">Местоположение</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="content">
+        <section class="project">
+          <div class="project__container">
+            <p class="project__shadow">Этот текст был прозрачным, но потом страница загрузилась, и он показался</p>
+            <p class="project__shadow">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio animi voluptate atque in mollitia quod illum
+              dolores maxime earum vel! Voluptatem illum exercitationem molestias unde at quos sequi provident a, ut,
+              delectus, alias officia officiis. Perferendis sunt, consequuntur, ratione fugiat voluptate quod quasi
+              aperiam veritatis excepturi veniam temporibus at. Inventore.
+            </p>
+          </div>
+        </section>
+        <section class="infrastructure"></section>
+        <section class="house"></section>
+        <section class="contacts"></section>
+      </main>
+      <footer class="footer"></footer>
     </div>
-</body>
-
+  </body>
+  <script>
+    window.onload = () => document.body.classList.add('project__loaded');
+  </script>
 </html>
